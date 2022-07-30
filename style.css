@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #103010;
+  overflow: hidden;
+}
+.container {
+  width: 610px;
+  overflow: hidden;
+}
+
+.container .text {
+  position: relative;
+  font-size: 44px;
+  font-weight: 500;
+  color: brown;
+}
+.container .text.first-text {
+  color: #fff;
+}
+.text.sec-text::before {
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #103010;
+  border-left: 2px solid red;
+  animation: move 4s steps(12) infinite;
+}
+@keyframes move {
+  40%,
+  60% {
+    left: calc(100% + 4px);
+  }
+  100% {
+    left: 0;
+  }
+}
