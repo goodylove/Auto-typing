@@ -12,13 +12,13 @@ body {
   overflow: hidden;
 }
 .container {
-  width: 610px;
+  width: 355px;
   overflow: hidden;
 }
 
 .container .text {
   position: relative;
-  font-size: 44px;
+  font-size: 40px;
   font-weight: 500;
   color: brown;
 }
@@ -33,7 +33,7 @@ body {
   height: 100%;
   position: absolute;
   background-color: #103010;
-  border-left: 2px solid red;
+  border-left: 5px solid red;
   animation: move 4s steps(12) infinite;
 }
 @keyframes move {
